@@ -12,7 +12,7 @@
     class Driver;
 
     #include <declarations.h>
-    #include "include.h"
+    #include <parsers/include.h>
 }
 
 %define parse.trace

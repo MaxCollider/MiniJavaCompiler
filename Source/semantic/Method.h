@@ -4,7 +4,7 @@
 #include "Declaration.h"
 #include "Type.h"
 #include "Formals.h"
-#include "../../Statements/Statements.h"
+#include "../Statements/Statements.h"
 
 class Method: public Declaration {
   public:

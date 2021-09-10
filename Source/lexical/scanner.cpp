@@ -1,6 +1,6 @@
-#line 2 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
+#line 2 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
 
-#line 4 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
+#line 4 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
 
 #define  YY_INT_ALIGNED short int
 
@@ -582,8 +582,8 @@ static const flex_int16_t yy_rule_linenum[46] =
     #include <string>
     #include <iostream>
     #include "../driver.h"
-    #include "parsers/parser.hh"
-#line 587 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
+    #include "../parsers/parser.hh"
+#line 587 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
 #define YY_NO_INPUT 1
 #line 18 "lexical/scanner.l"
   yy::parser::symbol_type make_NUMBER(
@@ -594,11 +594,11 @@ static const flex_int16_t yy_rule_linenum[46] =
     const std::string &s,
     const yy::parser::location_type& loc
   );
-#line 598 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
+#line 598 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
 #line 34 "lexical/scanner.l"
   # define YY_USER_ACTION  loc.columns(yyleng);
-#line 601 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
-#line 602 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
+#line 601 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
+#line 602 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
 
 #define INITIAL 0
 
@@ -798,7 +798,7 @@ YY_DECL
   loc.step();
 
 
-#line 802 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
+#line 802 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1111,7 +1111,7 @@ YY_RULE_SETUP
 #line 98 "lexical/scanner.l"
 ECHO;
 	YY_BREAK
-#line 1115 "/home/maxim/Desktop/work/compiler-checkpoint_2/Source/lexical/scanner.cpp"
+#line 1115 "/home/maxim/MiniJavaCompiler/Source/lexical/scanner.cpp"
 
 	case YY_END_OF_BUFFER:
 		{

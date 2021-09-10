@@ -5,8 +5,8 @@
     #include <cstring>
     #include <string>
     #include <iostream>
-    #include "../driver.h"
-    #include "../semantic/parser.hh"
+    #include "driver.h"
+    #include "parsers/parser.hh"
 %}
 
 %option noyywrap nounput noinput batch debug

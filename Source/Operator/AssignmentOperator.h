@@ -1,7 +1,7 @@
 #pragma once
 
 #include "semantic/Expression.h"
-#include "../../Statements/Statement.h"
+#include "../Statements/Statement.h"
 
 class AssignmentOperator: public Statement {
   public:

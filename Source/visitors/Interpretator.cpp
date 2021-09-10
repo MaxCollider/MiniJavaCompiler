@@ -5,7 +5,7 @@
 #include <Objects/Int.h>
 #include <Objects/Boolean.h>
 #include <Objects/Array.h>
-#include "../../Statements/Statement.h"
+#include "../Statements/Statement.h"
 #include <visitors/InterpretationPreparator.h>
 
 #include <iostream>

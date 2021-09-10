@@ -1,6 +1,6 @@
 #pragma once 
 
-#include "../../Statements/Statement.h"
+#include "../Statements/Statement.h"
 #include "Declaration.h"
 #include <string>
 
