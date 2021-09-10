@@ -1,0 +1,39 @@
+Program:
+	ClassStatement Fac extends 
+		Method: int ComputeFac(
+			int num,
+		)
+			Statements: 
+				AssertStatement is:
+					GreaterOperator: 
+						VariableReference num
+						NegationOperator: 
+							NumberLiteral: 1
+				LocalVariableDeclaration: int num_aux
+				IfStatement: 
+					EqualityOperator:
+						VariableReference num
+						NumberLiteral: 0
+					AssignmentOperator: 
+						VariableReference num_aux
+						NumberLiteral: 1
+					AssignmentOperator: 
+						VariableReference num_aux
+						MultiplicationOperator: 
+							VariableReference num
+							MethodInvocation: ComputeFac
+								ThisExpression
+								Arguments: 
+									SubtractionOperator: 
+										VariableReference num
+										NumberLiteral: 1
+				ReturnStatement: 
+					VariableReference num_aux
+	ClassStatement Factorial extends 
+		Method: void main()
+			Statements: 
+				PrintlnFunction: 
+					MethodInvocation: ComputeFac
+						AllocateStatement: Fac
+						Arguments: 
+							NumberLiteral: 10
