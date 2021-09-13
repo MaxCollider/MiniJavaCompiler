@@ -4,6 +4,7 @@ set(
     driver.h
 )
 
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/parsers)
 BISON_TARGET(
     Parser
         parsers/parser.y
@@ -11,6 +12,7 @@ BISON_TARGET(
     DEFINES_FILE ${CMAKE_CURRENT_BINARY_DIR}/parsers/parser.hh
 )
 
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/lexical)
 FLEX_TARGET(
     Scanner
     lexical/scanner.l
